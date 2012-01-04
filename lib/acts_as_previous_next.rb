@@ -10,3 +10,5 @@ module ActsAsPreviousNext
 
   end
 end
+
+ActiveRecord::Base.send :include, ActsAsPreviousNext
