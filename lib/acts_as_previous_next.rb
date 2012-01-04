@@ -1,0 +1,2 @@
+module ActsAsPreviousNext
+end
