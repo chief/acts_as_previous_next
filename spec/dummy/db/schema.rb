@@ -11,38 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120104174603) do
-
-  create_table "anothers", :force => true do |t|
-    t.string   "test"
-    t.integer  "unique"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "boolean_defaults", :force => true do |t|
-    t.string   "name"
-    t.boolean  "default"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "fail_ones", :force => true do |t|
-    t.string   "name"
-    t.boolean  "default"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+ActiveRecord::Schema.define(:version => 20120105104935) do
 
   create_table "posts", :force => true do |t|
     t.string   "name"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "string_defaults", :force => true do |t|
+  create_table "users", :force => true do |t|
+    t.string   "role"
     t.string   "name"
-    t.string   "default"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
