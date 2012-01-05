@@ -17,3 +17,4 @@ gem "jquery-rails"
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'rspec-rails', :git => "git://github.com/rspec/rspec-rails.git"
 gem 'database_cleaner', :git => "git://github.com/asanghi/database_cleaner.git"
+gem 'cancan'

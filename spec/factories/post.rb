@@ -6,4 +6,8 @@ FactoryGirl.define do
   factory :second_post, class: Post do
     name 'second post'
   end
+
+  factory :third_post, class: Post do
+    name 'third post'
+  end
 end
