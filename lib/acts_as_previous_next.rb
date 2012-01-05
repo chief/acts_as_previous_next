@@ -5,7 +5,6 @@ module ActsAsPreviousNext
 
   included do
     def self.acts_as_previous_next(options = {})
-
       configuration = { column: 'id', with_cancan: false }
       configuration.update(options) if options.is_a?(Hash)
 
@@ -18,9 +17,7 @@ module ActsAsPreviousNext
       end
 
       class_eval <<-EOF
-
         if with_cancan
-
           def next(ability)
             self.class.accessible_by(ability).where("#{column} > ?", self.send('#{column}')).order("#{column}").first ||
             self.class.accessible_by(ability).order("#{column}").first
@@ -30,10 +27,7 @@ module ActsAsPreviousNext
             self.class.accessible_by(ability).where("#{column} < ?", self.send('#{column}')).order("#{column} DESC").first ||
             self.class.accessible_by(ability).order("#{column} DESC").first
           end
-
-
         else
-
           def next
             self.class.where("#{column} > ?", self.send('#{column}')).order("#{column}").first ||
             self.class.order("#{column}").first
@@ -43,10 +37,7 @@ module ActsAsPreviousNext
             self.class.where("#{column} < ?", self.send('#{column}')).order("#{column} DESC").first ||
             self.class.order("#{column} DESC").first
           end
-
         end
-
-
       EOF
     end
   end
