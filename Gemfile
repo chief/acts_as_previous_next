@@ -18,3 +18,8 @@ gem "jquery-rails"
 gem 'rspec-rails', :git => "git://github.com/rspec/rspec-rails.git"
 gem 'database_cleaner', :git => "git://github.com/asanghi/database_cleaner.git"
 gem 'cancan'
+#gem 'factory_girl_rails'
+#gem 'spork', '0.9.0.rc9'
+gem 'rb-fsevent'
+#gem 'guard-rspec'
+gem 'libnotify'
