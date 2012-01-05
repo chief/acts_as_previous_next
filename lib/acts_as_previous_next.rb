@@ -11,12 +11,11 @@ module ActsAsPreviousNext
 
       if options.is_a? Symbol
         column = options.to_s
+        with_cancan = false
       elsif options.is_a? Hash
         column      = options[:column] || "id"
         with_cancan = options[:with_cancan]
       end
-
-      puts 'column = ' + column.to_s
 
       class_eval <<-EOF
 
