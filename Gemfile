@@ -18,4 +18,3 @@ gem "jquery-rails"
 gem 'rspec-rails', :git => "git://github.com/rspec/rspec-rails.git"
 gem 'database_cleaner', :git => "git://github.com/asanghi/database_cleaner.git"
 gem 'cancan'
-gem 'pry'
