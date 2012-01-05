@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ActsAsPreviousNext::VERSION
   s.authors     = ["Giorgos Tsiftsis"]
   s.email       = ["giorgos.tsiftsis@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/chief/acts_as_previous_next"
   s.summary     = "A gem allowing an actire_record model to have previous, next based on a column."
   s.description = "This 'acts_as' extension provides the capability for having previous next methods for object.
   Previous & next are based on a specified column (default is id)."
