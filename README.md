@@ -11,7 +11,7 @@ In your Gemfile
 
   `gem 'acts_as_previous_next'`
 
-Currently is tested on rails3.2.0.rc2, ruby 1.9.3 and mysql
+Currently is tested on rails3.2, ruby 1.9.3 and mysql
 
 ## Example
 `
