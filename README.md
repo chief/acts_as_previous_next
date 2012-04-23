@@ -1,20 +1,20 @@
-= ActsAsPreviousNext
+# ActsAsPreviousNext
 
-== Description
+## Description
 
-This 'acts_as' extension provides the capability for having previous & next methods for an object.
+This `acts_as` extension provides the capability for having previous & next methods for an object.
 Previous & next are based on a specified column (default is id).
 
-== Install
+## Install
 
 In your Gemfile
 
-  gem 'acts_as_previous_next'
+  `gem 'acts_as_previous_next'`
 
 Currently is tested on rails3.2.0.rc2, ruby 1.9.3 and mysql
 
-== Example
-
+## Example
+`
   class Post < ActiveRecord::Base
     acts_as_previous_next
     # acts_as_previous_next column: :id
@@ -31,20 +31,23 @@ Currently is tested on rails3.2.0.rc2, ruby 1.9.3 and mysql
   another_post.save
   another_post.next # => post
   another_post.previous # => post
-
-Currently CanCan authorization is supported as option (+false+ by default). If cancan authorization is
-enabled then +current_ability+ must be passed to next, previous methods. So the previous example
+`
+Currently CanCan authorization is supported as option (`false` by default). If cancan authorization is
+enabled then `current_ability` must be passed to next, previous methods. So the previous example
 with cancan will be:
-
+`
   class Post < ActiveRecord::Base
     acts_as_previous_next with_cancan: true
 
     belongs_to :user
   end
-
+`
 And in your view:
-
+`
   link_to 'Next', @post.next(current_ability)
   link_to 'Previous', @post.previous(current_ability)
+`
+## License
 
+MIT License
 
