@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env sh
 
 cd spec/dummy
 bundle exec rake db:create RAILS_ENV=test
