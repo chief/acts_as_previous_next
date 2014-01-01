@@ -20,9 +20,11 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   #s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency 'rails', '> 3.0.0'
+  s.add_dependency 'activesupport', ['>= 3.0.0']
+  s.add_dependency 'activerecord',  ['>= 3.0.0']
 
   s.add_development_dependency 'mysql2'
+  s.add_development_dependency 'rails', ['= 3.2.16']
   s.add_development_dependency "rspec"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency 'factory_girl_rails'

@@ -10,7 +10,7 @@ for an object. Previous & next are based on a specified column (default is id).
 
 ## Install
 
-* Rails > 3.0
+* Rails >= 3
 
   In your Gemfile
 
