@@ -1,5 +1,7 @@
 # ActsAsPreviousNext
 
+[![Build Status](https://travis-ci.org/chief/acts_as_previous_next.png?branch=master)](https://travis-ci.org/chief/acts_as_previous_next)
+
 ## Description
 
 This `acts_as` extension provides the capability for having previous & next methods
