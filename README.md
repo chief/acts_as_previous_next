@@ -47,7 +47,8 @@ And in your view:
   link_to 'Next', @post.next(current_ability)
   link_to 'Previous', @post.previous(current_ability)
 ```
+
 ## License
 
-MIT License
+acts_as_previous_next is released under the [MIT License](http://opensource.org/licenses/MIT)
 
