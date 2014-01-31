@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/chief/acts_as_previous_next.png?branch=master)](https://travis-ci.org/chief/acts_as_previous_next)
 [![Code Climate](https://codeclimate.com/github/chief/acts_as_previous_next.png)](https://codeclimate.com/github/chief/acts_as_previous_next)
 [![Gem Version](https://badge.fury.io/rb/acts_as_previous_next.png)](http://badge.fury.io/rb/acts_as_previous_next)
+[![Dependency Status](https://gemnasium.com/chief/acts_as_previous_next.png)](https://gemnasium.com/chief/acts_as_previous_next)
 
 ## Description
 
